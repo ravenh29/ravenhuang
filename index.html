@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Huang(Raven) Huang</title>
+  
+  <meta name="author" content="Huang(Raven) Huang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Huang(Raven) Huang</name>
+              </p>
+              <p>I am a third year PhD student in EECS at UC Berkeley, advised by Prof. Ken Goldberg. My research focuses on robot learning for manipulation including lateral access mechanical search, deformable object manipulation and grasping. Recently I have also worked on the representation learning between tactile and vision. 
+                I received my M.S. degree in ME at UT Austin advised by Prof. Luis Sentis, working on control and modelling of human in exoskeleton.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:huangr@berkeley.edu">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?hl=en&user=N_KDBGcAAAAJ">Google Scholar</a> 
+                <!-- &nbsp/&nbsp -->
+              </p>
+            </td>
+            <td style="padding:2.5%;width:100%;max-width:100%">
+              <a href="images/selfie.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/selfie.jpeg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Selected Publications</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+
+           <!-- TACVIS -->
+           <tr onmouseout="tacvis_stop()" onmouseover="tacvis_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='tacvis_under'>
+                  <img src="images/tacvis_under.png" width='180'/>
+                </div>
+                <img src="images/tacvis_splash.png" width='180' id='tacvis_splash'/>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function tacvis_start() {
+                  document.getElementById('tacvis_splash').style.opacity = "0";
+                  document.getElementById('tacvis_under').style.opacity = "1";
+                }
+
+                function tacvis_stop() {
+                  document.getElementById('tacvis_splash').style.opacity = "1";
+                  document.getElementById('tacvis_under').style.opacity = "0";
+                }
+                tacvis_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->
+              <papertitle>Learning Self-Supervised Representations from Vision and Touch
+                  for Active Sliding Perception of Deformable Surfaces</papertitle>
+              <br>
+              <!-- AUTHORS -->
+              Justin Kerr*, <b>Huang Huang</b>*, Albert Wilcox, Ryan Hoque, Jeffrey Ichnowski, Roberto Calandra, and Ken Goldberg,
+              <small>*Equal contribution</small>
+              <br>
+              <!-- CONFERENCE -->
+              <em>ICRA</em> 2023 (Submitted)
+              <p></p>
+              <!-- SUMMARY -->
+              We learn a self-supervised representation cross tactile and vistion using contrastive loss. We collect vision-tacitile pairs in a self-supervised way in real. The learned representation is utilized in the downstream active perception tasks without fine-tuning.
+            </td>
+          </tr>
+
+          <!-- staxray -->
+          <tr onmouseout="staxray_stop()" onmouseover="staxray_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='staxray_destack'>
+                  <img src="images/staxray_destack.png" width='180'/>
+                </div>
+                <img src="images/staxray_restack.png" width='180' id='staxray_restack'/>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function staxray_start() {
+                  document.getElementById('staxray_restack').style.opacity = "0";
+                  document.getElementById('staxray_destack').style.opacity = "1";
+                }
+
+                function staxray_stop() {
+                  document.getElementById('staxray_restack').style.opacity = "1";
+                  document.getElementById('staxray_destack').style.opacity = "0";
+                }
+                staxray_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->  
+                <a href="https://sites.google.com/berkeley.edu/stax-ray">
+                <papertitle>Mechanical Search on Shelves with Efficient
+                  Stacking and Destacking of Objects</papertitle>
+                </a>
+              <br>
+              <!-- AUTHORS -->
+                <b>Huang Huang</b>*, Letian Fu*, Michael Danielczuk, Chung Min Kim,
+                Zachary Tam, Jeffrey Ichnowski, Anelia Angelova, Brian Ichter, and
+                Ken Goldberg, <small>*Equal contribution</small>
+              <br>
+              <!-- CONFERENCE -->
+              <em>ISRR</em> 2022, <a href="https://arxiv.org/pdf/2207.02347.pdf">arXiv</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We develop two policies for lateral access mechanical search with stacked objects. Both policies utilize stacking and destacking actions and can reveal the
+              target object with 82–100% success in simulation outperforming the baseline by up to 66%, and can achieve 67–100% success in physical experiments.
+            </td>
+          </tr>
+
+          <!-- dmodo -->
+          <tr onmouseout="dmodo_stop()" onmouseover="dmodo_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <video  width=115% height=100% muted autoplay loop id="dmodo">
+                  <source src="images/dmodo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->  
+                <a href="https://sites.google.com/view/single-arm-fling/home">
+                <papertitle>Efficiently Learning Single-Arm Fling Motions to Smooth Garments</papertitle>
+                </a>
+              <br>
+              <!-- AUTHORS -->
+                Lawrence Yunliang Chen*, <b>Huang Huang</b>*, Ellen Novoseller, Daniel Seita, Jeffrey Ichnowski, Michael Laskey, Ken Goldberg,
+                 <small>*Equal contribution</small>
+              <br>
+              <!-- CONFERENCE -->
+              <em>ISRR</em> 2022, <a href="https://arxiv.org/abs/2206.08921">arXiv</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We develop two policies for lateral access mechanical search with stacked objects. Both policies utilize stacking and destacking actions and can reveal the
+              target object with 82–100% success in simulation outperforming the baseline by up to 66%, and can achieve 67–100% success in physical experiments.
+            </td>
+          </tr>
+
+          <!-- EVO-NERF -->
+          <tr onmouseout="evonerf_stop()" onmouseover="evonerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='evonerf_under'>
+                  <img src="images/evonerf_early_stop.png" width='180'/>
+                </div>
+                <video  width=115% height=100% muted autoplay loop id="evonerf_splash">
+                  <source src="images/evonerf_splash.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function evonerf_start() {
+                  document.getElementById('evonerf_splash').style.opacity = "0";
+                  document.getElementById('evonerf_under').style.opacity = "1";
+                }
+
+                function evonerf_stop() {
+                  document.getElementById('evonerf_splash').style.opacity = "1";
+                  document.getElementById('evonerf_under').style.opacity = "0";
+                }
+                evonerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->
+              <a href="https://sites.google.com/view/evo-nerf">
+                <papertitle>Evo-NeRF: Evolving NeRF for Sequential Robot Grasping</papertitle>
+              </a>
+              <br>
+              <!-- AUTHORS -->
+              Justin Kerr, Letian Fu, <b>Huang Huang</b>, Yahav Avigal, Matthew Tancik, Jeffrey Ichnowski, Angjoo Kanazawa, Ken Goldberg
+              <br>
+              <!-- CONFERENCE -->
+              <em>CoRL</em> 2022, <b>Oral Presentation</b>, <a href="https://openreview.net/forum?id=Bxr45keYrf">OpenReview</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We propose Evo-NeRF with additional geometry regularizations improving performance in rapid capture settings to achieve real-time, updateable scene reconstruction for rapidly grasping table-top transparent objects.
+              We train a NeRF-adapted grasping network learns to ignore floaters.
+            </td>
+          </tr>
+
+          <!-- prc -->
+          <tr onmouseout="prc_stop()" onmouseover="prc_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='prc_splash'>
+                  <img src="images/prc_teaser.jpg" width='180'/>
+                </div>
+                <video  width=115% height=100% muted autoplay loop id="prc_vid">
+                  <source src="images/prc_tossvideo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function prc_start() {
+                  document.getElementById('prc_splash').style.opacity = "0";
+                  document.getElementById('prc_vid').style.opacity = "1";
+                }
+
+                function prc_stop() {
+                  document.getElementById('prc_splash').style.opacity = "1";
+                  document.getElementById('prc_vid').style.opacity = "0";
+                }
+                prc_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->  
+                <a href="https://sites.google.com/view/dynamic-cable">
+                <papertitle>Real2Sim2Real: Self-Supervised Learning of Physical
+                  Single-Step Dynamic Actions for Planar Robot Casting</papertitle>
+                </a>
+              <br>
+              <!-- AUTHORS -->
+              Vincent Lim*, <b>Huang Huang</b>*, Lawrence Yunliang Chen, Jonathan Wang,
+              Jeffrey Ichnowski, Daniel Seita, Michael Laskey, Ken Goldberg, <small>*Equal contribution</small>
+              <br>
+              <!-- CONFERENCE -->
+              <em>ICRA</em> 2021, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811651">paper</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We collect planar robot casting data in real in a self-supervised way to tune the simulation in Isaac Gym. We then collect more data in the tuned simulator. 
+              Combined with upsampled real data, we learn a policy for planar robot casting to reach to a given target, attaining median error distance (as % of cable length) ranging
+              from 8% to 14%.
+            </td>
+          </tr>
+          
+          <!-- acc -->
+          <tr onmouseout="acc_stop()" onmouseover="acc_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='acc1'>
+                  <img src="images/acc1.png" width='180'/>
+                </div>
+                <img src="images/acc2.png" width='180' id='acc2'/>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function acc_start() {
+                  document.getElementById('acc1').style.opacity = "0";
+                  document.getElementById('acc2').style.opacity = "1";
+                }
+
+                function acc_stop() {
+                  document.getElementById('acc1').style.opacity = "1";
+                  document.getElementById('acc2').style.opacity = "0";
+                }
+                acc_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->                 
+                <papertitle>Adaptive compliance shaping with human impedance estimation</papertitle>
+              <br>
+              <!-- AUTHORS -->
+              Huang Huang, Henry F Cappel, Gray C Thomas, Binghan He, Luis Sentis
+              <br>
+              <!-- CONFERENCE -->
+              <em>ACC</em> 2020, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9147875">paper</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We propose an amplification controller with online-adapted exoskeleton compliance that takes advantage of a novel, online human stiffness estimator
+              based on surface electromyography (sEMG) sensors and stretch sensors connected to the forearm and upper arm of the human. Online estimation
+              of stiffness is shown to improve the bandwidth of strength amplification while remaining robustly stable.
+            </td>
+          </tr>
+
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
