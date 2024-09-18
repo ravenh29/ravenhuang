@@ -20,8 +20,7 @@
               <p style="text-align:center">
                 <name>Huang(Raven) Huang</name>
               </p>
-              <p>I am a third year PhD student in EECS at UC Berkeley, advised by Prof. Ken Goldberg. My research focuses on robot learning for manipulation including lateral access mechanical search, deformable object manipulation and grasping. Recently I have also worked on the representation learning between tactile and vision. 
-                I received my M.S. degree in ME at UT Austin advised by Prof. Luis Sentis, working on control and modelling of human in exoskeleton.
+              <p>I am a final year PhD student in EECS at UC Berkeley, advised by Prof. Ken Goldberg. My research focuses on general robot learning. Recently I have worked on the in-context learning of robotics, the alignment between tactile, vision and language and the whole body control of a quadruped. 
               </p>
               <p style="text-align:center">
                 <a href="mailto:huangr@berkeley.edu">Email</a> &nbsp/&nbsp
@@ -42,6 +41,127 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+
+
+          <!-- ICRT-->
+          <tr onmouseout="icrt_stop()" onmouseover="icrt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <video  width=115% height=100% muted autoplay loop id="icrt">
+                  <source src="images/teaser_icrt.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function icrt_start() {
+                  document.getElementById('icrt_splash').style.opacity = "0";
+                  document.getElementById('icrt_under').style.opacity = "1";
+                }
+
+                function icrt_stop() {
+                  document.getElementById('icrt_splash').style.opacity = "1";
+                  document.getElementById('icrt_under').style.opacity = "0";
+                }
+                icrt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->
+              <papertitle>In-Context Imitation Learning via Next-Token Prediction</papertitle>
+              <br>
+              <!-- AUTHORS -->
+              Letian Fu*,  <b>Huang Huang</b>*, Gaurav Datta*, Lawrence Yunliang Chen, William Chung-Ho Panitch, Fangchen Liu, Hui Li, Ken Goldberg <small>*Equal contribution</small>
+              <br>
+              <!-- CONFERENCE -->
+              <em> arXiv preprint arXiv:2408.15980</em> 2024, <a href="https://icrt.dev/">Website</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We explore how to enhance next-token prediction models to perform in-context imitation learning on a real robot. We propose In-Context Robot Transformer (ICRT), a causal transformer that generalizes to unseen tasks conditioned on prompts of sensorimotor trajectories of the new task composing of image observations, actions and states tuples, collected through human teleoperation.
+            </td>
+          </tr>
+          
+
+          <!-- TVL-->
+          <tr onmouseout="tvl_stop()" onmouseover="tvl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <img src="images/tvl.png" width='180' id='tvl_splash'/>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function tvl_start() {
+                  document.getElementById('tvl_splash').style.opacity = "0";
+                  document.getElementById('tvl_under').style.opacity = "1";
+                }
+
+                function tvl_stop() {
+                  document.getElementById('tvl_splash').style.opacity = "1";
+                  document.getElementById('tvl_under').style.opacity = "0";
+                }
+                tvl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->
+              <papertitle>A touch, vision, and language dataset for multimodal alignment</papertitle>
+              <br>
+              <!-- AUTHORS -->
+              Letian Fu, Gaurav Datta*, <b>Huang Huang*</b>, William Chung-Ho Panitch*, Jaimyn Drake*, Joseph Ortiz, Mustafa Mukadam, Mike Lambeta, Roberto Calandra, Ken Goldberg <small>*Equal contribution</small>
+              <br>
+              <!-- CONFERENCE -->
+              <em> ICML</em> 2024, <b>Oral Presentation</b>, <a href="https://tactile-vlm.github.io/">Website</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We introduce the Touch-Vision-Language (TVL) dataset, which combines paired tactile and visual observations with both human-annotated and VLM-generated tactile-semantic labels. We then leverage a contrastive learning approach to train a CLIP-aligned tactile encoder and finetune an open-source LLM for a tactile description task. Our results show that incorporating tactile information allows us to significantly outperform state-of-the-art VLMs (including the label generating model) on a tactile understanding task.
+            </td>
+          </tr>
+
+
+          <!-- Dog-->
+          <tr onmouseout="dog_stop()" onmouseover="dog_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <video  width=115% height=100% muted autoplay loop id="icrt">
+                  <source src="images/dog.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function dog_start() {
+                  document.getElementById('dog_splash').style.opacity = "0";
+                  document.getElementById('dog_under').style.opacity = "1";
+                }
+
+                function dog_stop() {
+                  document.getElementById('dog_splash').style.opacity = "1";
+                  document.getElementById('dog_under').style.opacity = "0";
+                }
+                dog_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->
+              <papertitle>Manipulator as a Tail: Promoting Dynamic Stability for Legged Locomotion</papertitle>
+              <br>
+              <!-- AUTHORS -->
+              Huang Huang, Antonio Loquercio, Ashish Kumar, Neerja Thakkar, Ken Goldberg, Jitendra Malik
+              <br>
+              <!-- CONFERENCE -->
+              <em> ICRA</em> 2024, <a href="https://sites.google.com/view/chimeralocomotion/home?authuser=1&pli=1">Website</a>
+              <p></p>
+              <!-- SUMMARY -->
+              For locomotion, is an arm on a legged robot a liability or an asset for locomotion? Biological systems evolved additional limbs beyond legs that facilitates postural control. This work shows how a manipulator can be an asset for legged locomotion at high speeds or under external perturbations, where the arm serves beyond manipulation.
+            </td>
+          </tr>
+          
+          
+
 
            <!-- TACVIS -->
            <tr onmouseout="tacvis_stop()" onmouseover="tacvis_start()">
@@ -77,88 +197,14 @@
               <small>*Equal contribution</small>
               <br>
               <!-- CONFERENCE -->
-              <em>ICRA</em> 2023 (Submitted)
+              <em>RSS</em> 2023, <a href="https://arxiv.org/pdf/2209.13042">Paper</a>
               <p></p>
               <!-- SUMMARY -->
               We learn a self-supervised representation cross tactile and vistion using contrastive loss. We collect vision-tacitile pairs in a self-supervised way in real. The learned representation is utilized in the downstream active perception tasks without fine-tuning.
             </td>
           </tr>
 
-          <!-- staxray -->
-          <tr onmouseout="staxray_stop()" onmouseover="staxray_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- IMAGES -->
-              <div class="one">
-                <div class="two" id='staxray_destack'>
-                  <img src="images/staxray_destack.png" width='180'/>
-                </div>
-                <img src="images/staxray_restack.png" width='180' id='staxray_restack'/>
-              </div>
-              <!-- SCRIPT FOR HOVERING -->
-              <script type="text/javascript">
-                function staxray_start() {
-                  document.getElementById('staxray_restack').style.opacity = "0";
-                  document.getElementById('staxray_destack').style.opacity = "1";
-                }
 
-                function staxray_stop() {
-                  document.getElementById('staxray_restack').style.opacity = "1";
-                  document.getElementById('staxray_destack').style.opacity = "0";
-                }
-                staxray_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- TITLE -->  
-                <a href="https://sites.google.com/berkeley.edu/stax-ray">
-                <papertitle>Mechanical Search on Shelves with Efficient
-                  Stacking and Destacking of Objects</papertitle>
-                </a>
-              <br>
-              <!-- AUTHORS -->
-                <b>Huang Huang</b>*, Letian Fu*, Michael Danielczuk, Chung Min Kim,
-                Zachary Tam, Jeffrey Ichnowski, Anelia Angelova, Brian Ichter, and
-                Ken Goldberg, <small>*Equal contribution</small>
-              <br>
-              <!-- CONFERENCE -->
-              <em>ISRR</em> 2022, <a href="https://arxiv.org/pdf/2207.02347.pdf">arXiv</a>
-              <p></p>
-              <!-- SUMMARY -->
-              We develop two policies for lateral access mechanical search with stacked objects. Both policies utilize stacking and destacking actions and can reveal the
-              target object with 82–100% success in simulation outperforming the baseline by up to 66%, and can achieve 67–100% success in physical experiments.
-            </td>
-          </tr>
-
-          <!-- dmodo -->
-          <tr onmouseout="dmodo_stop()" onmouseover="dmodo_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- IMAGES -->
-              <div class="one">
-                <video  width=115% height=100% muted autoplay loop id="dmodo">
-                  <source src="images/dmodo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- TITLE -->  
-                <a href="https://sites.google.com/view/single-arm-fling/home">
-                <papertitle>Efficiently Learning Single-Arm Fling Motions to Smooth Garments</papertitle>
-                </a>
-              <br>
-              <!-- AUTHORS -->
-                Lawrence Yunliang Chen*, <b>Huang Huang</b>*, Ellen Novoseller, Daniel Seita, Jeffrey Ichnowski, Michael Laskey, Ken Goldberg,
-                 <small>*Equal contribution</small>
-              <br>
-              <!-- CONFERENCE -->
-              <em>ISRR</em> 2022, <a href="https://arxiv.org/abs/2206.08921">arXiv</a>
-              <p></p>
-              <!-- SUMMARY -->
-              We develop two policies for lateral access mechanical search with stacked objects. Both policies utilize stacking and destacking actions and can reveal the
-              target object with 82–100% success in simulation outperforming the baseline by up to 66%, and can achieve 67–100% success in physical experiments.
-            </td>
-          </tr>
 
           <!-- EVO-NERF -->
           <tr onmouseout="evonerf_stop()" onmouseover="evonerf_start()">
@@ -254,45 +300,7 @@
           </tr>
           
           <!-- acc -->
-          <tr onmouseout="acc_stop()" onmouseover="acc_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- IMAGES -->
-              <div class="one">
-                <div class="two" id='acc1'>
-                  <img src="images/acc1.png" width='180'/>
-                </div>
-                <img src="images/acc2.png" width='180' id='acc2'/>
-              </div>
-              <!-- SCRIPT FOR HOVERING -->
-              <script type="text/javascript">
-                function acc_start() {
-                  document.getElementById('acc1').style.opacity = "0";
-                  document.getElementById('acc2').style.opacity = "1";
-                }
-
-                function acc_stop() {
-                  document.getElementById('acc1').style.opacity = "1";
-                  document.getElementById('acc2').style.opacity = "0";
-                }
-                acc_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- TITLE -->                 
-                <papertitle>Adaptive compliance shaping with human impedance estimation</papertitle>
-              <br>
-              <!-- AUTHORS -->
-              Huang Huang, Henry F Cappel, Gray C Thomas, Binghan He, Luis Sentis
-              <br>
-              <!-- CONFERENCE -->
-              <em>ACC</em> 2020, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9147875">paper</a>
-              <p></p>
-              <!-- SUMMARY -->
-              We propose an amplification controller with online-adapted exoskeleton compliance that takes advantage of a novel, online human stiffness estimator
-              based on surface electromyography (sEMG) sensors and stretch sensors connected to the forearm and upper arm of the human. Online estimation
-              of stiffness is shown to improve the bandwidth of strength amplification while remaining robustly stable.
-            </td>
-          </tr>
+          
 
         </tbody></table>
       </td>
